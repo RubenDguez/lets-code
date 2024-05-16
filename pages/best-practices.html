@@ -5,72 +5,73 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Best Practices</title>
 		<link rel="stylesheet" href="../assets/prism.css" />
-		<link rel="stylesheet" href="../assets/style.css" />
+		<!-- <link rel="stylesheet" href="../assets/style.css" /> -->
+		<script src="https://cdn.tailwindcss.com" defer></script>
 	</head>
-	<body>
-		<header>
-			<h1>What's the reason behind Coding Best Practices?</h1>
-			<img src="../assets/code-signing-best-practices.jpg" alt="An abstraction logo for coding best practices" height="500" width="500" />
-			<p><small>By Argenis Ruben Dominguez</small></p>
-			<p><small>Wed, May 15 2024</small></p>
+	<body class="container max-w-screen-sm mx-auto tracking-wide leading-relaxed">
+		<header class="mb-5">
+			<h1 class="text-4xl my-4">What's the reason behind Coding Best Practices?</h1>
+			<img class="column-1 w-full" src="../assets/code-signing-best-practices.jpg" alt="An abstraction logo for coding best practices" />
+			<p class="text-right leading-tight"><small>By Argenis Ruben Dominguez</small></p>
+			<p class="text-right leading-tight"><small>Wed, May 15 2024</small></p>
 		</header>
 		<main>
 			<section>
-				<h2>Overview</h2>
+				<h2 class="text-3xl">Overview</h2>
 				<p>
 					In today's dynamic landscape of software development, adhering to coding best practices is no longer merely a choice but a necessity. By embracing these
 					principles, developers can elevate the quality, scalability, and maintainability of their codebase, ultimately delivering robust and efficient solutions that
 					meet the evolving needs of users and stakeholders.
 				</p>
 				<ol>
-					<li>
-						<h3>Code Quality</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Code Quality</h3>
 						<p>
 							Best practices help ensure that code is of high quality, readable, maintainable, and reliable. Well-written code is easier to understand, modify, and
 							debug, leading to fewer errors and improved software performance.
 						</p>
 					</li>
-					<li>
-						<h3>Consistency</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Consistency</h3>
 						<p>
 							Best practices promote consistency across the codebase, making it easier for developers to collaborate and understand each other's code. Consistent
 							coding styles, naming conventions, and architectural patterns facilitate smoother integration of new features and reduce the learning curve for team
 							members.
 						</p>
 					</li>
-					<li>
-						<h3>Efficiency</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Efficiency</h3>
 						<p>
 							Following best practices can streamline the development process by reducing rework, minimizing technical debt, and avoiding common pitfalls. By adhering
 							to established guidelines and standards, developers can write code more efficiently and focus on solving business problems rather than dealing with
 							avoidable issues.
 						</p>
 					</li>
-					<li>
-						<h3>Scalability</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Scalability</h3>
 						<p>
 							Well-designed code that follows best practices is more scalable and adaptable to changing requirements and increasing complexity. Modularization,
 							abstraction, and adherence to principles such as SOLID enable systems to evolve and grow without sacrificing stability or performance.
 						</p>
 					</li>
-					<li>
-						<h3>Reduced Risks</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Reduced Risks</h3>
 						<p>
 							Best practices mitigate risks associated with software development, including security vulnerabilities, performance bottlenecks, and compatibility
 							issues. Practices such as code reviews, automated testing, and version control help catch errors early in the development cycle, minimizing the
 							likelihood of critical issues reaching production environments.
 						</p>
 					</li>
-					<li>
-						<h3>Maintainability</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Maintainability</h3>
 						<p>
 							Code that follows best practices is easier to maintain over time. Clear documentation, modular design, and separation of concerns facilitate code
 							understanding and troubleshooting, even as the codebase grows in size and complexity. This reduces the cost and effort required for ongoing maintenance
 							and support activities.
 						</p>
 					</li>
-					<li>
-						<h3>Professionalism</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Professionalism</h3>
 						<p>
 							Adhering to best practices demonstrates professionalism and commitment to delivering high-quality software solutions. Clients, stakeholders, and users
 							are more likely to trust and value products developed using established standards and practices, enhancing the reputation and credibility of the
@@ -88,8 +89,8 @@
 					ever-evolving landscape of software development.
 				</p>
 				<ul>
-					<li>
-						<h3>Consistent Code Formatting</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Consistent Code Formatting</h3>
 						<p>
 							Enhances readability and maintainability. It ensures that all developers can easily understand and navigate the codebase. Additionally, consistent
 							formatting reduces the likelihood of introducing syntax errors or misunderstandings during code reviews and collaboration.
@@ -106,8 +107,8 @@
                             </pre>
 						</div>
 					</li>
-					<li>
-						<h3>Meaningful Variable Names</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Meaningful Variable Names</h3>
 						<p>
 							Descriptive variable names convey the purpose and usage of variables, making the code self-explanatory and easier to understand. Meaningful names reduce
 							the need for comments and improve code readability, which is crucial for maintaining codebase over time and facilitating collaboration among team
@@ -125,8 +126,8 @@
                             </pre>
 						</div>
 					</li>
-					<li>
-						<h3>Modularization</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Modularization</h3>
 						<p>
 							Breaks down complex code into smaller, reusable components, promoting code reuse and maintainability. By isolating functionalities into distinct modules
 							or functions, developers can focus on specific tasks, enhance code organization, and facilitate testing and debugging. Modularization also supports
@@ -151,8 +152,8 @@
                             </pre>
 						</div>
 					</li>
-					<li>
-						<h3>Avoiding Magic Numbers and Strings</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Avoiding Magic Numbers and Strings</h3>
 						<p>
 							Magic numbers and strings are cryptic and prone to errors when used multiple times in code. By defining named constants or variables, developers make
 							the code more self-explanatory and easier to maintain. Named constants provide a single point of control for values that may change in the future,
@@ -171,8 +172,8 @@
                             </pre>
 						</div>
 					</li>
-					<li>
-						<h3>Error Handling</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Error Handling</h3>
 						<p>
 							Proper error handling improves the robustness and reliability of software systems. By anticipating and handling exceptions gracefully, developers
 							prevent crashes and unexpected behavior, enhancing the user experience and minimizing downtime. Clear error messages also aid in troubleshooting and
@@ -198,8 +199,8 @@
                             </pre>
 						</div>
 					</li>
-					<li>
-						<h3>Code Comments</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Code Comments</h3>
 						<p>
 							Provide additional context and explanation for complex or non-obvious code segments. They help other developers understand the intent behind the code,
 							making it easier to maintain and modify. Well-placed comments clarify the purpose of algorithms, business logic, or edge cases, reducing ambiguity and
@@ -219,8 +220,8 @@
                             </pre>
 						</div>
 					</li>
-					<li>
-						<h3>Unit Testing</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Unit Testing</h3>
 						<p>
 							Verifies the correctness of individual components or functions, ensuring that they behave as expected under different conditions. By writing and running
 							tests automatically, developers catch bugs early in the development process, reducing the cost and effort of fixing them later. Unit tests also serve as
@@ -247,8 +248,8 @@
                             </pre>
 						</div>
 					</li>
-					<li>
-						<h3>Version Control</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Version Control</h3>
 						<p>
 							Systems track changes to code over time, enabling collaboration, history tracking, and rollback to previous states if necessary. By using version
 							control, developers can work concurrently on the same codebase, merge changes seamlessly, and maintain a clear audit trail of modifications. Version
@@ -267,8 +268,8 @@
                             </pre>
 						</div>
 					</li>
-					<li>
-						<h3>Optimization</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Optimization</h3>
 						<p>
 							Improves the performance and efficiency of code, enhancing the user experience and reducing resource consumption. By optimizing algorithms, data
 							structures, and resource usage, developers ensure that software systems meet performance requirements and scale effectively. Optimization also minimizes
@@ -291,8 +292,8 @@
                             </pre>
 						</div>
 					</li>
-					<li>
-						<h3>Documentation</h3>
+					<li class="my-6">
+						<h3 class="text-2xl">Documentation</h3>
 						<p>
 							Provides comprehensive information about code functionality, usage, and dependencies. It helps developers understand how to use and interact with code
 							modules, reducing the learning curve and onboarding time for new team members. Clear documentation also facilitates maintenance, troubleshooting, and
@@ -324,7 +325,7 @@
 				</ul>
 			</section>
 			<section>
-				<h2>Conclusion</h2>
+				<h2 class="text-3xl mb-5">Conclusion</h2>
 				<p>
 					In software development, implementing coding best practices is paramount for building robust, scalable, and maintainable solutions. By ensuring consistent
 					formatting, meaningful naming, modularization, and effective error handling, developers enhance code quality and resilience. Unit testing, version control,
