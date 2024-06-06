@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- SEO Meta Tags -->
+		<title>Is JavaScript a good choice for beginner developers? | Argenis Ruben Dominguez</title>
+		<meta
+			name="description"
+			content="Explore why JavaScript is an ideal choice for beginner developers. Learn about its simplicity, versatility, job market demand, and essential topics for beginners in JavaScript."
+		/>
+		<meta
+			name="keywords"
+			content="JavaScript, beginner developers, programming language, web development, job market, DOM manipulation, events, ES6, asynchronous programming"
+		/>
+		<meta name="author" content="Argenis Ruben Dominguez" />
+		<meta name="robots" content="index, follow" />
+
+		<link rel="stylesheet" href="../assets/prism.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="../assets/prism.js"></script>
+		<script src="https://kit.fontawesome.com/67a6837f6b.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header class="mb-5 pt-5 container max-w-screen-md mx-auto tracking-wide leading-relaxed p-10 rounded bg-gradient-to-r from-slate-100 via-white to-slate-300">
+			<h1 class="text-6xl my-4">Getting Started with Git: A Beginner's Guide to Version Control</h1>
+			<img src="../assets/git.jpg" alt="A git workflow-like background" />
+			<p class="text-xs text-right text-slate-400">
+				<i
+					><small
+						><a href="https://lewisjohnbaxter.medium.com/crafting-meaningful-git-commits-7527b3853669"
+							>Git background thanks to: Lewis Baxter @ https://lewisjohnbaxter.medium.com/
+						</a></small
+					></i
+				>
+			</p>
+			<div class="mt-5">
+				<img class="rounded-full" src="../assets/aime.png" alt="Argenis Ruben Dominguez profile" height="64" width="64" />
+				<p class="leading-tight italic text-xs">By Argenis Ruben Dominguez</p>
+				<p class="leading-tight italic text-xs">Mon, Jun 6 2024</p>
+			</div>
+			<div class="mt-5">
+				<p>
+					In simple terms, Git is a tool that helps developers keep track of changes in their code and work together. It's like a system for managing different versions
+					of code, so you can easily see what changed, go back to earlier versions, and collaborate with others.
+					<br />
+					<br />
+					Basically, Git is a distributed version control system (DVCS) that helps developers manage and track changes to their code, letting multiple people work on a
+					project at the same time. It keeps a history of all the changes and makes it easier to coordinate updates, making teamwork a lot smoother.
+				</p>
+			</div>
+		</header>
+		<main class="container max-w-screen-sm mx-auto tracking-wide leading-relaxed px-5">
+			<section>
+				<p>
+					From the <span><a class="text-blue-600 visited:text-purple-600" href="https://www.git-scm.com/" target="_blank">Git website</a></span
+					>: It is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+					Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with
+					features like cheap local branching, convenient staging areas, and multiple workflows.
+				</p>
+				<br />
+				<h2 class="text-3xl my-5">Key aspects</h2>
+				<br />
+				<ul>
+					<li class="mb-4">
+						<strong>Version Control</strong>
+						<p>
+							Git keeps track of changes made to files over time. This allows developers to revert files or projects back to previous versions, compare changes over
+							time, and see who last modified something that might be causing a problem.
+						</p>
+					</li>
+					<li class="mb-4">
+						<strong>Distributed System</strong>
+						<p>
+							Unlike traditional version control systems like Subversion or CVS, Git is distributed. Every developer has a full copy of the repository, including its
+							entire history. This allows for greater flexibility and offline work.
+						</p>
+					</li>
+					<li class="mb-4">
+						<strong>Branching and Merging</strong>
+						<p>
+							Git makes it easy to create, manage, and merge branches. Branching allows developers to diverge from the main project to work on separate features or
+							fixes independently, then merge their changes back into the main branch when ready.
+						</p>
+					</li>
+					<li class="mb-4">
+						<strong>Commit</strong>
+						<p>
+							Changes in Git are recorded in snapshots called commits. Each commit is a full snapshot of the files at a certain point in time, not just the
+							differences from the previous commit.
+						</p>
+					</li>
+					<li class="mb-4">
+						<strong>Repository</strong>
+						<p>
+							A Git repository contains all the project files and the entire revision history. Repositories can be local (on your computer) or remote (on a server
+							like <span><a class="text-blue-600 visited:text-purple-600" a href="https://github.com/" target="_blank">GitHub</a></span
+							>, <span><a class="text-blue-600 visited:text-purple-600" a href="https://about.gitlab.com/" target="_blank">GitLab</a></span
+							>, or <span><a class="text-blue-600 visited:text-purple-600" a href="https://bitbucket.org/" target="_blank">Bitbucket</a></span
+							>).
+						</p>
+					</li>
+					<li class="mb-4">
+						<strong>Collaboration</strong>
+						<p>
+							Git enables collaboration among multiple developers. Changes can be pulled from remote repositories, reviewed, and merged into local repositories. It
+							also facilitates code reviews, continuous integration, and deployment workflows.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2 class="text-3xl my-5">Getting Started with Git</h2>
+				<ul>
+					<li class="mb-1">
+						<p>
+							<strong>Install Git</strong>
+							Download and install Git from <a class="text-blue-600 visited:text-purple-600" href="https://www.git-scm.com/" target="_blank">git-scm.com</a>.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>Create a Repository</strong>
+							Use git init to start a new project or git clone [url] to copy an existing one.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>Make Changes</strong>
+							Edit your files as needed.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>Track Changes</strong>
+							Use git add to stage changes and git commit to save them.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>Share Your Work</strong>
+							Use git push to upload your changes to a remote repository and git pull to get updates from others.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2 class="text-3xl my-5">Common Git Commands</h2>
+				<ul>
+					<li class="mb-1">
+						<p>
+							<strong>git init</strong>
+							Initializes a new Git repository.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>git clone [url]</strong>
+							Clones an existing repository from a remote server.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>git add [file]</strong>
+							Stages files to be committed.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>git commit -m "message"</strong>
+							Commits staged changes with a message.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>git push</strong>
+							Pushes local commits to a remote repository.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>git pull</strong>
+							Fetches and integrates changes from a remote repository.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>git status</strong>
+							Shows the status of changes in the working directory.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>git log</strong>
+							Displays the commit history.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>git branch</strong>
+							Lists branches, creates a new branch, or deletes a branch.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>git checkout [branch]</strong>
+							Switches to a different branch.
+						</p>
+					</li>
+					<li class="mb-1">
+						<p>
+							<strong>git merge [branch]</strong>
+							Merges changes from one branch into another.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2 class="text-3xl my-5">Let&#39;s Code</h2>
+				<p class="text-sm bg-slate-100 p-5 rounded text-orange-500">
+					<i
+						>Just a heads up: This article only goes over the basics of Git and the most commonly used commands. So, I'm going to assume you already know how to create
+						a repository on one of the remote servers we talked about earlier.</i
+					>
+				</p>
+				<br />
+				<p class="text-sm bg-slate-100 p-5 rounded text-orange-500">
+					<i>Please take into consideration that the following commands are performed using GitBash (Windows users) or Terminal (MacOs users)</i>
+				</p>
+				<br />
+				<div class="code">
+					<pre>
+                                <code class="language-ts highlight-keywords" data-prismjs-copy="copy">
+									// let's clone a repository previously created in GitHub
+									// using git clone; this command will clone desired repo into
+									// a folder with the same repo name in relative to your current path
+									git clone git@github.com:[your-user]/lets-code.git
+
+									// changing directory to the one created by git clone command
+									// using 'cd' command
+									cd [newly created directory name]
+
+									// once 'inside' the directory we can list the branches with 'git branch' command
+									// at this point we should only have the 'main' branch
+									git branch
+
+									// let's create a new branch named 'feature/add-page-and-style'
+									// with 'git checkout-b'
+									// this command in combination of the '-b' flag will perform 2 actions
+									// 1. create the branch (git branch feature/add-page-and-style)
+									// 2. checkout to the branch (git checkout feature/add-page-and-style)
+									git checkout -b feature/add-page-and-style
+
+									// let's create the index.html file with the 'touch' command
+									touch index.html
+
+									// we can check the current status of our work by using the 'git status' command
+									git status
+
+									// now we can track the changes with the 'git add' command
+									// we are going to use the '-A' to include all current changes at once
+									git add -A
+
+									// after adding the files to be tracked we can commit the changes
+									// using the 'git commit' command
+									// we will use the '-m' flag to write a meaningful comment in the same line
+									git commit -m "add: index html file"
+
+									// now we can add the style css file
+									// using same workflow as adding the index.html file
+									touch style.css
+
+									git status
+									git add -A
+									git commit -m "add: style css file"
+
+									// once we are happy and compliant with the feature
+									// we can push the changes to any of the remote servers using the 'git push' command
+									git push
+
+									// once we have successfully uploaded the desired changes to GitHub
+									// we need to checkout to the 'main' branch to reflect those changes
+									// in the main branch using git checkout and git pull
+									git checkout main
+
+									// git pull will 'fetch' new changes in remote and 'merge' them in
+									// our current branch
+									git pull
+                                </code>
+                            </pre>
+				</div>
+			</section>
+			<section>
+				<h2 class="text-3xl my-5">Conclusion</h2>
+				<p>
+					Git has become a fundamental tool in modern software development, fostering collaborative and efficient development practices. It is a powerful tool that
+					becomes easier to understand the more you use it. Start with basic commands and gradually explore more advanced features as you become comfortable.
+				</p>
+			</section>
+		</main>
+		<footer class="container rounded-t-lg max-w-screen-m mx-auto mt-5 bg-gradient-to-r from-slate-100 via-white to-slate-300">
+			<div class="flex align-middle pt-8">
+				<div class="text-center text-4xl w-full pt-8">
+					<a class="inline-block align-middle px-5" target="_blank" href="https://www.linkedin.com/in/argenis-dominguez/"><i class="fa-brands fa-linkedin-in"></i> </a>
+					<a class="inline-block align-middle px-5" target="_blank" href="https://www.facebook.com/argenis.dgz.2008/"><i class="fa-brands fa-facebook"></i></a>
+					<a class="inline-block align-middle px-5" target="_blank" href="https://twitter.com/ArgenisDoming18/"><i class="fa-brands fa-x-twitter"></i></a>
+					<a class="inline-block align-middle px-5" target="_blank" href="https://github.com/RubenDguez/"><i class="fa-brands fa-github"></i></a>
+					<a class="inline-block align-middle px-5" target="_blank" href="https://rubendguez.github.io/rdominguez/"><i class="fa-solid fa-rocket"></i></a>
+				</div>
+				<div class="w-full text-right inline-block align-middle pt-3 pr-5">
+					<p>
+						In search of new challenges and opportunities, I am eager to bring my skills and expertise to dynamic organizations where I can drive impactful outcomes and
+						contribute to the advancement of cutting-edge technologies.
+					</p>
+				</div>
+			</div>
+			<div class="text-center w-full pt-16 pb-8">
+				<p><span>&copy;</span><span id="all-right-reserved"></span><span>Argenis Ruben Dominguez</span></p>
+			</div>
+		</footer>
+		<script src="../assets/script.js"></script>
+	</body>
+</html>
