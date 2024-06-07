@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- SEO Meta Tags -->
+		<title>Getting Started with HTML: A Beginner's Guide | Argenis Ruben Dominguez</title>
+		<meta name="description" content="Learn the basics of HTML with our beginner's guide. Understand elements, tags, attributes, and the importance of semantic tags in web development." />
+		<meta name="keywords" content="HTML, beginner's guide, web development, HTML elements, HTML tags, semantic tags, web design, web content" />
+		<meta name="author" content="Argenis Ruben Dominguez" />
+		<meta name="robots" content="index, follow" />
+		<meta name="published" content="Jun 7, 2024" />
+
+		<meta property="og:title" content="Getting Started with HTML: A Beginner's Guide" />
+		<meta property="og:description" content="Learn the basics of HTML with our beginner's guide. Understand elements, tags, attributes, and the importance of semantic tags in web development." />
+		<meta property="og:image" content="URL_to_your_image.jpg" />
+		<meta property="og:url" content="https://yourwebsite.com/your-article-url" />
+		<meta property="og:type" content="article" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Getting Started with HTML: A Beginner's Guide" />
+		<meta name="twitter:description" content="Learn the basics of HTML with our beginner's guide. Understand elements, tags, attributes, and the importance of semantic tags in web development." />
+		<meta name="twitter:image" content="URL_to_your_image.jpg" />
+
+		<link rel="stylesheet" href="../assets/prism.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="../assets/prism.js"></script>
+		<script src="https://kit.fontawesome.com/67a6837f6b.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header class="mb-5 pt-5 container max-w-screen-md mx-auto tracking-wide leading-relaxed p-10 rounded bg-gradient-to-r from-slate-100 via-white to-slate-300">
+			<h1 class="text-6xl my-4">Getting Started with HTML: A Beginner's Guide</h1>
+			<img src="../assets/html.jpeg" alt="A html background with logo and handwriting" />
+			<p class="text-xs text-right text-slate-400">
+				<i
+					><small
+						><a href="https://www.deviantart.com/bqra/art/HTML-5-Wallpaper-194958384"
+							>HTML background thanks to: bqra @ https://www.deviantart.com/bqra/gallery
+						</a></small
+					></i
+				>
+			</p>
+			<div class="mt-5">
+				<img class="rounded-full" src="../assets/aime.png" alt="Argenis Ruben Dominguez profile" height="64" width="64" />
+				<p class="leading-tight italic text-xs">By Argenis Ruben Dominguez</p>
+				<p class="leading-tight italic text-xs">Fri, Jun 7 2024</p>
+			</div>
+			<div class="mt-5">
+				<p>
+					HTML is the foundation of all web pages. Without HTML, the web as we know it wouldn't exist. It allows content to be structured and presented in a way that is
+					accessible and easy to navigate for users, while also enabling search engines to understand and index the content properly.
+					<br />
+					<br />
+					HTML is a fundamental language for creating web pages, structuring content, and enabling interaction through hyperlinks, making it an essential tool for anyone
+					looking to develop or understand web content.
+				</p>
+			</div>
+		</header>
+		<main class="container max-w-screen-sm mx-auto tracking-wide leading-relaxed px-5">
+			<section>
+				<p>
+					HTML, or HyperText Markup Language, is the standard language used to create and design documents on the World Wide Web. Let's break down this definition into
+					more understandable parts:
+				</p>
+				<br />
+				<ul>
+					<li class="mb-4">
+						<strong>HyperText</strong>
+						<p>
+							HyperText refers to text that contains links to other texts. These links, known as hyperlinks, allow users to navigate from one document to another with
+							a click. For instance, when you click on a link on a web page and it takes you to another page, that’s hypertext in action.
+						</p>
+					</li>
+					<li class="mb-4">
+						<strong>Markup Language</strong>
+						<ul class="mt-2">
+							<li class="mb-4 ml-4">
+								<p>
+									<strong>Markup</strong>
+									is a way of indicating that certain text has a special meaning. In HTML, we use tags to mark up text. Tags are like labels that tell the browser
+									how to display the content. For example, the tag &lt;strong&gt; indicates that the text inside it should be bold.
+								</p>
+							</li>
+							<li class="mb-4 ml-4">
+								<p>
+									<strong>Language</strong>
+									here means a set of rules and syntax that we use to communicate instructions to the computer—in this case, the web browser.
+								</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<br />
+				<h2 class="text-3xl my-5">Structure of HTML</h2>
+				<p>HTML is made up of elements, tags, and attributes, which together form the content and structure of a web page.</p>
+				<br />
+				<ul>
+					<li class="mb-4">
+						<strong>Elements</strong>
+						<p>
+							An HTML element is everything from the start tag to the end tag, including the content in between. For example,
+							<code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code> is a paragraph element.
+						</p>
+					</li>
+					<li class="mb-4">
+						<strong>Tags</strong>
+						<p>
+							Tags are used to create elements. They are enclosed in angle brackets, like <code>&lt;tagname&gt;</code>. Most tags come in pairs: an opening tag and a
+							closing tag. For example, <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code>.
+						</p>
+					</li>
+					<li class="mb-4">
+						<strong>Attributes</strong>
+						<p>
+							Attributes provide additional information about elements. They are always included in the opening tag and usually come in name/value pairs like
+							name="value". For example, in <code>&lt;img src="image.jpg" alt="Description of image"&gt;</code>, <i>src</i> and <i>alt</i> are attributes.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2 class="text-3xl my-5">Basic Structure of an HTML Document</h2>
+				<p>
+					An HTML document typically starts with a <code>&lt;!DOCTYPE html&gt;</code> declaration, followed by an <code>&lt;html&gt;</code> element that wraps the entire
+					document. Inside the <code>&lt;html&gt;</code> element, there are two main parts:
+				</p>
+				<ul class="mt-8">
+					<li>
+						<p>
+							<strong>Head (<code>&lt;head&gt;</code>)</strong>
+							Contains meta-information about the document, such as its title (displayed in the browser tab), character set, styles, and scripts. For example:
+						</p>
+						<div class="code">
+							<pre>
+                                <code class="language-html line-numbers highlight-keywords" data-prismjs-copy="copy"> 
+									&lt;head&gt;
+										&lt;title&gt;My First Web Page&lt;/title&gt;
+									&lt;/head&gt;
+                                </code>
+                            </pre>
+						</div>
+					</li>
+					<li class="mt-8">
+						<p>
+							<strong>Body (<code>&lt;body&gt;</code>)</strong>
+							Contains the actual content of the document that is visible to the users, such as text, images, and links. For example:
+						</p>
+						<div class="code">
+							<pre>
+                                <code class="language-html line-numbers highlight-keywords" data-prismjs-copy="copy"> 
+									&lt;body&gt;
+										&lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+										&lt;p&gt;Thi is a paragraph of text on my web page.&lt;/p&gt;
+										&lt;img src="picture.jpg" alt="A description of the picture" /&gt;
+									&lt;/body&gt;
+                                </code>
+                            </pre>
+						</div>
+					</li>
+					<li class="mt-8">
+						<p>
+							<strong>Example Explained</strong>
+							Here is a complete simple HTML document:
+						</p>
+						<div class="code">
+							<pre>
+								<code class="language-html line-numbers highlight-keywords" data-prismjs-copy="copy"> 
+									&lt;!DOCTYPE html&gt;
+									&lt;html&gt;
+										&lt;head&gt;
+											&lt;title&gt;My First Web Page&lt;/title&gt;
+										&lt;/head&gt;
+										&lt;body&gt;
+											&lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+											&lt;p&gt;Thi is a paragraph of text on my web page.&lt;/p&gt;
+											&lt;img src="picture.jpg" alt="A description of the picture" /&gt;
+										&lt;/body&gt;
+									&lt;/html&gt;
+                                </code>
+                            </pre>
+						</div>
+						<ul>
+							<li>
+								<p>
+									<code><strong>&lt;!DOCTYPE html&gt;</strong></code>
+									<span>Declares the document type and version of HTML.</span>
+								</p>
+							</li>
+							<li>
+								<p>
+									<code><strong>&lt;html&gt;</strong></code>
+									<span>The root element that wraps all content.</span>
+								</p>
+							</li>
+							<li>
+								<p>
+									<code><strong>&lt;head&gt;</strong></code>
+									<span>Contains meta-information, like the title.</span>
+								</p>
+							</li>
+							<li>
+								<p>
+									<code><strong>&lt;title&gt;</strong></code>
+									<span>Sets the title of the web page, which appears in the browser tab.</span>
+								</p>
+							</li>
+							<li>
+								<p>
+									<code><strong>&lt;body&gt;</strong></code>
+									<span>Contains the content that is displayed on the web page.</span>
+								</p>
+							</li>
+							<li>
+								<p>
+									<code><strong>&lt;h1&gt;</strong></code>
+									<span>A heading element, typically used for main titles.</span>
+								</p>
+							</li>
+							<li>
+								<p>
+									<code><strong>&lt;p&gt;</strong></code>
+									<span>A paragraph element, used for text.</span>
+								</p>
+							</li>
+							<li>
+								<p>
+									<code><strong>&lt;img&gt;</strong></code>
+									<span
+										>An image element, with <code>src</code> for the image source and <code>alt</code> for alternative text if the image cannot be
+										displayed.</span
+									>
+								</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2 class="text-3xl my-5">Semantic Tags</h2>
+				<p>
+					Semantic tags in HTML are elements that not only define the structure and layout of web content but also clearly describe their meaning and purpose. These tags
+					provide meaning to both the browser and the developer, making it easier to read and maintain the code, as well as improving accessibility and search engine
+					optimization (SEO).
+				</p>
+				<h3 class="text-xl my-5">Why Use Semantic Tags?</h3>
+				<ul>
+					<li class="mb-4">
+						<p>
+							<strong>Clarity</strong>
+							<span>They make the HTML code more readable and understandable by clearly describing the purpose of the different sections.</span>
+						</p>
+					</li>
+					<li class="mb-4">
+						<p>
+							<strong>Accessibility</strong>
+							<span>Screen readers and other assistive technologies can better interpret and navigate the content.</span>
+						</p>
+					</li>
+					<li class="mb-4">
+						<p>
+							<strong>SEO</strong>
+							<span>Search engines can better understand the structure and importance of the content, which can improve search rankings.</span>
+						</p>
+					</li>
+					<li class="mb-4">
+						<p>
+							<strong>Maintainability</strong>
+							<span>More readable and well-structured code is easier to maintain and update.</span>
+						</p>
+					</li>
+				</ul>
+				<h3 class="text-xl my-5">Common Semantic Tags in HTML</h3>
+				<ul>
+					<li class="mb-4">
+						<p>
+							<strong>&lt;header&gt;</strong>
+							<span>Defines the header of a section or the entire page. It often contains introductory content or navigational links.</span>
+						</p>
+					</li>
+					<li class="mb-4">
+						<p>
+							<strong>&lt;nav&gt;</strong>
+							<span>Represents a section of the page intended for navigation links.</span>
+						</p>
+					</li>
+					<li class="mb-4">
+						<p>
+							<strong>&lt;main&gt;</strong>
+							<span>Specifies the main content of the document. Only one <code>&lt;main&gt;</code> element should be used per document.</span>
+						</p>
+					</li>
+					<li class="mb-4">
+						<p>
+							<strong>&lt;section&gt;</strong>
+							<span>Defines a section in a document, typically with a thematic grouping of content.</span>
+						</p>
+					</li>
+					<li class="mb-4">
+						<p>
+							<strong>&lt;article&gt;</strong>
+							<span
+								>Represents a self-contained piece of content that could be independently distributed or reused, such as a blog post, news article, or forum
+								post.</span
+							>
+						</p>
+					</li>
+					<li class="mb-4">
+						<p>
+							<strong>&lt;aside&gt;</strong>
+							<span>Contains content that is tangentially related to the content around it, often used for sidebars, pull quotes, or advertisements.</span>
+						</p>
+					</li>
+					<li class="mb-4">
+						<p>
+							<strong>&lt;footer&gt;</strong>
+							<span>Defines the footer for a section or the entire document, often containing metadata, links, and copyright information.</span>
+						</p>
+					</li>
+					<li class="mb-4">
+						<p>
+							<strong>&lt;figure&gt; and &lt;figcaption&gt;</strong>
+							<span>Used to group media content like images and their captions.</span>
+						</p>
+					</li>
+					<li class="mb-4">
+						<p>Example of a Semantic HTML Document</p>
+						<div class="code">
+							<pre>
+								<code class="language-html line-numbers highlight-keywords" data-prismjs-copy="copy"> 
+									&lt;!DOCTYPE html&gt;
+									&lt;html lang="en"&gt;
+									&lt;head&gt;
+										&lt;meta charset="UTF-8"&gt;
+										&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+										&lt;title&gt;My Web Page&lt;/title&gt;
+									&lt;/head&gt;
+									&lt;body&gt;
+										&lt;header&gt;
+											&lt;h1&gt;My Web Page&lt;/h1&gt;
+											&lt;nav&gt;
+												&lt;ul&gt;
+													&lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+												&lt;/ul&gt;
+											&lt;/nav&gt;
+										&lt;/header&gt;
+										
+										&lt;main&gt;
+											&lt;section id="home"&gt;
+												&lt;h2&gt;Welcome&lt;/h2&gt;
+												&lt;p&gt;This is the home section of my web page.&lt;/p&gt;
+											&lt;/section&gt;
+											
+											&lt;section id="about"&gt;
+												&lt;h2&gt;About Us&lt;/h2&gt;
+												&lt;p&gt;Information about us...&lt;/p&gt;
+											&lt;/section&gt;
+											
+											&lt;article&gt;
+												&lt;h2&gt;Latest News&lt;/h2&gt;
+												&lt;p&gt;Today we launched our new product...&lt;/p&gt;
+											&lt;/article&gt;
+										&lt;/main&gt;
+										
+										&lt;aside&gt;
+											&lt;h3&gt;Related Articles&lt;/h3&gt;
+											&lt;p&gt;Check out these related articles...&lt;/p&gt;
+										&lt;/aside&gt;
+										
+										&lt;footer&gt;
+											&lt;p&gt;&copy; 2024 My Web Page&lt;/p&gt;
+											&lt;nav&gt;
+												&lt;a href="#privacy"&gt;Privacy Policy&lt;/a&gt;
+												&lt;a href="#terms"&gt;Terms of Service&lt;/a&gt;
+											&lt;/nav&gt;
+										&lt;/footer&gt;
+									&lt;/body&gt;
+									&lt;/html&gt;
+
+                                </code>
+                            </pre>
+						</div>
+						<p>
+							In this example, each semantic tag helps to clearly define the different parts of the web page, making it easier to read and understand for both humans
+							and machines.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2 class="text-3xl my-5">Conclusion</h2>
+				<p>
+					HTML is the cornerstone of web development, providing the essential structure and functionality for all web pages. Its combination of hypertext capabilities and
+					markup language syntax allows for the creation of richly interconnected and semantically meaningful content. By understanding the basics of HTML, such as
+					elements, tags, attributes, and the use of semantic tags, developers can craft well-structured, accessible, and SEO-friendly web pages.
+				</p>
+				<br />
+				<p>
+					Whether you're a beginner or an experienced developer, mastering HTML is crucial for building robust and maintainable web content. As the web continues to
+					evolve, the foundational skills learned through HTML will remain indispensable, enabling you to adapt to new technologies and frameworks with ease. By adhering
+					to best practices in HTML, such as using semantic tags, you not only enhance the readability and maintainability of your code but also improve the user
+					experience and accessibility of your web pages.
+				</p>
+				<br />
+			</section>
+		</main>
+		<footer class="container rounded-t-lg max-w-screen-m mx-auto mt-5 bg-gradient-to-r from-slate-100 via-white to-slate-300">
+			<div class="flex align-middle pt-8">
+				<div class="text-center text-4xl w-full pt-8">
+					<a class="inline-block align-middle px-5" target="_blank" href="https://www.linkedin.com/in/argenis-dominguez/"><i class="fa-brands fa-linkedin-in"></i> </a>
+					<a class="inline-block align-middle px-5" target="_blank" href="https://www.facebook.com/argenis.dgz.2008/"><i class="fa-brands fa-facebook"></i></a>
+					<a class="inline-block align-middle px-5" target="_blank" href="https://twitter.com/ArgenisDoming18/"><i class="fa-brands fa-x-twitter"></i></a>
+					<a class="inline-block align-middle px-5" target="_blank" href="https://github.com/RubenDguez/"><i class="fa-brands fa-github"></i></a>
+					<a class="inline-block align-middle px-5" target="_blank" href="https://rubendguez.github.io/rdominguez/"><i class="fa-solid fa-rocket"></i></a>
+				</div>
+				<div class="w-full text-right inline-block align-middle pt-3 pr-5">
+					<p>
+						In search of new challenges and opportunities, I am eager to bring my skills and expertise to dynamic organizations where I can drive impactful outcomes and
+						contribute to the advancement of cutting-edge technologies.
+					</p>
+				</div>
+			</div>
+			<div class="text-center w-full pt-16 pb-8">
+				<p><span>&copy;</span><span id="all-right-reserved"></span><span>Argenis Ruben Dominguez</span></p>
+			</div>
+		</footer>
+		<script src="../assets/script.js"></script>
+	</body>
+</html>
