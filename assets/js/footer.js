@@ -30,7 +30,7 @@ const linksElements = () => {
 
 const linkWrapperDiv = document.createElement('div');
 linkWrapperDiv.setAttribute('class', 'text-center text-4xl w-full pt-8');
-linksEls().forEach((el) => linkWrapperDiv.appendChild(el));
+linksElements().forEach((el) => linkWrapperDiv.appendChild(el));
 
 const textWrapperDiv = document.createElement('div');
 textWrapperDiv.setAttribute('class', 'w-full text-right inline-block align-middle pt-3 pr-5')
