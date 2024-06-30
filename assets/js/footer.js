@@ -36,7 +36,7 @@ const textWrapperDiv = document.createElement('div');
 textWrapperDiv.setAttribute('class', 'w-full text-right inline-block align-middle pt-3 pr-5')
 
 const textEl = document.createElement('p');
-textEl.textContent = `In search of new challenges and opportunities, I am eager to bring my skills and expertise to dynamic organizations where I can drive impactful outcomes and contribute to the advancement of cutting-edge technologies.`;
+textEl.textContent = `Seeking new challenges and opportunities, I am excited to apply my skills and expertise to dynamic organizations where I can create impactful results and help advance innovative technologies.`;
 textWrapperDiv.appendChild(textEl);
 
 const copyRightWrapper = document.createElement('div');
